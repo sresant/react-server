@@ -82,7 +82,7 @@ class ClientController extends EventEmitter {
 		this._failDfd = Q.defer();
 
 		// Log this after loglevel is set.
-		logTimingData('wakeFromStart', window._reactServerTimingStart, new Date);
+		logTimingData('wakeFromStart', window._reactServerTimingStart);
 		// this is a proxy for when above the fold content gets painted (displayed) on the browser
 		logTimingData('displayAboveTheFold.fromStart', window._reactServerTimingStart, window.__displayAboveTheFold);
 	}
